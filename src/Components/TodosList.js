@@ -1,12 +1,14 @@
+import TodoItem from "./TodoItem";
+
+
 const TodosList = (props) =>{
     return(
         <div>
-            <h1>{props.todos.map(todo =>(
-                <ul>
-                <li>{todo.title}</li>
-                <li>{todo.id}</li>
-                </ul>
-            ))} </h1>
+            <ul>{props.todos.map(todo =>(
+                
+                <TodoItem key={todo.id} todo={todo}/>
+                
+            ))} </ul>
         </div>
     );
 }
