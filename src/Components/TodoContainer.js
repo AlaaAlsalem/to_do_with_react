@@ -26,6 +26,11 @@ class TodoContainer extends React.Component {
             <div>
                 <h1> hello from create react app</h1>
                 <p> I am in a react app</p>
+                <ul>
+      {this.state.todos.map(todo => (
+        <li>{todo.title}</li>
+      ))}
+    </ul>
             </div>
         );
     }
