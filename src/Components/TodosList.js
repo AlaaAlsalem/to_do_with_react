@@ -10,7 +10,9 @@ const TodosList = (props) => {
                     key={todo.id}
                     todo={todo}
                     handleChangeProps={props.handleChangeProps}
-                    deleteTodoPropas={props.deleteTodoProps}
+                    deleteTodoProps={props.deleteTodoProps}
+                    setUpdate={props.setUpdate}
+
                 />
             ))} </ul>
         </div>
