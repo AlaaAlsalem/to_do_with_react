@@ -1,11 +1,14 @@
-import TodoContainer from './Components/TodoContainer'
-import './App.css';
+import TodoContainer from './functionBased/Components/TodoContainer';
+import './functionBased/App.css';
+import { Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-    <TodoContainer/>
-    </div>
+    <Route path="/">
+      <div className="App">
+        <TodoContainer />
+      </div>
+    </Route>
   );
 }
 
